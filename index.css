@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+.veggieman {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  font-family: 'AudioWide', cursive;
+  font-size: 100%;
+  color: black;
+  text-align: center;
+  font-size:10vw; font-size: 24px;   font-style: normal;   font-variant: normal;   font-weight: 700;   line-height: 26.4px;
+}
+
+.score {
+color: black;
+text-align: center;
+font-size:5vw;
+font-family: 'AudioWide', cursive;
+font-size: 10px;   font-style: normal;   font-variant: normal;   font-weight: 700;   line-height: 26.4px;
+}
+
+i {
+border: solid black;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 10px;
+
+}
+
+.right {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+}
+
+.left {
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+}
+
+.up {
+transform: rotate(-135deg);
+-webkit-transform: rotate(-135deg);
+}
+
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+.upbutton {
+padding-left: 6%
+}
+
+#left {
+padding-top: 0%;
+padding-left:5%;
+padding-right:5%;
+}
+
+#right {
+padding-top: 0%;
+padding-left:5%;
+padding-right:5%;
+}
+#down {
+padding-top: 0%;
+padding-left:5%;
+padding-right:5%;
+}
+#up {
+padding-top: 0%;
+padding-left:5%;
+padding-right:5%;
+}
+/* Divs */
+#top {
+text-align: center;
+}
+#sketch-holder {
+text-align: center;
+}
+
+#buttons {
+text-align: center
+}
