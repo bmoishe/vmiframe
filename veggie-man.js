@@ -18,7 +18,7 @@ function VeggieMan() {
     this.x = constrain(this.x, 0, width-scle)
     this.y = constrain(this.y, 0, height-scle)
     if (total === 20) {
-      alert("Congradulations: You are healthy enough to save the world")
+      alert("Congratulations: You are healthy enough to save the world")
       setup();
     }
     else if (total < 0) {
@@ -71,5 +71,30 @@ function VeggieMan() {
     rect(this.x, this.y, scle, scle);
   }
 
+}
 
+function component(width, height, color, x, y, type) {
+  this.type = type;
+  if (type == "image") {
+    this.image = new Image();
+    this.image.src = color;
+  }
+  this.width = width;
+  this.height = height;
+  this.speedX = 0;
+  this.speedY = 0;
+  this.x = x;
+  this.y = y;
+  this.update = function() {
+    ctx = myGameArea.context;
+    if (type == "image") {
+      ctx.drawImage(this.image,
+        this.x,
+        this.y,
+        this.width, this.height);
+    } else {
+      ctx.fillStyle = color;
+      ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+  }
 }
