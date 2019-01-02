@@ -17,8 +17,13 @@ function VeggieMan() {
     this.y = this.y + this.yspeed*scle;
     this.x = constrain(this.x, 0, width-scle)
     this.y = constrain(this.y, 0, height-scle)
-    document.getElementById("score").innerHTML = "Health: " + total;
-
+    if (total === 20) {
+      alert("You are healthy enought to save the world")
+      setup();
+    }
+    else {
+      document.getElementById("score").innerHTML = "Health: " + total;
+    }
   }
 
   this.eat = function(pos) {
