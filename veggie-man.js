@@ -18,7 +18,11 @@ function VeggieMan() {
     this.x = constrain(this.x, 0, width-scle)
     this.y = constrain(this.y, 0, height-scle)
     if (total === 20) {
-      alert("You are healthy enought to save the world")
+      alert("Congradulations: You are healthy enough to save the world")
+      setup();
+    }
+    else if (total < 0) {
+      alert("GAME OVER: You were unable to save the world because you ate too much meat")
       setup();
     }
     else {
@@ -53,7 +57,7 @@ function VeggieMan() {
       if (d < 1 ) {
         this.total = 0
         this.carbonFootprint = []
-        alert("GAME OVER: You were unable to save the world");
+        alert("GAME OVER: You were unable to save the world because you could not breath");
         setup();
       }
     }
